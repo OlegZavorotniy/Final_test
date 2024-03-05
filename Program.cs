@@ -44,3 +44,10 @@ void PrintResultMassive(string [] str2)
     }
     Console.Write("]");
 }
+
+Console.WriteLine("Введите количество строк в массиве ");
+int count = Convert.ToInt32(Console.ReadLine());
+string [] str = new string[count];
+CreateNewMassive(str);
+string [] str2 = ResultMassive(str);
+PrintResultMassive(str2);
