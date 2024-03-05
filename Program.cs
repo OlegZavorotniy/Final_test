@@ -34,3 +34,13 @@ string [] ResultMassive(string [] str2)
     return resultString;
 
 }
+void PrintResultMassive(string [] str2)
+{
+     Console.Write("[");
+    for (int i = 0; i < str2.Length; i++)
+    {
+        if (i < str2.Length - 1)    Console.Write($"'{str2[i]}', ");
+        else Console.Write($"'{str2[i]}'");
+    }
+    Console.Write("]");
+}
